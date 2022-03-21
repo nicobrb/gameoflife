@@ -1,0 +1,16 @@
+<p>Game Of Life</p>
+
+<%= "Generation NR. #{@gen}"%>
+<br />
+<div class="matrix">
+  <%for i in 0..@rows-1 do %>
+    <% for j in 0..@cols-1 do %>
+      <%= @grid[i][j] %>
+     <% end %>
+    <br />
+  <% end %>
+</div>
+
+<%= button_to "RUN", {class: 'run'} %>
+
+
