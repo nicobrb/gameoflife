@@ -1,0 +1,2 @@
+class MatrixException < StandardError
+end
